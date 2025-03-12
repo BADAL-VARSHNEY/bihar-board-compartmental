@@ -12,7 +12,7 @@ const UserLogin = () => {
       
       {/* Title */}
       <Grid item xs={12} textAlign="center">
-        <Typography variant="h5" sx={{ color: "green", fontWeight: "bold" }}>
+        <Typography variant="h5" sx={{ color: "green", fontWeight: "bold" }} className="card-title">
           Online Application For Secondary Compartmental/Special Application for Exam 2025
         </Typography>
       </Grid>
@@ -22,14 +22,14 @@ const UserLogin = () => {
         <Grid item size={{xl:6,md:6,sm:12}}>
           <Card sx={{ border: "1px solid #ddd", borderRadius: 2, backgroundColor: "#f8f9fa" }}>
             <CardContent>
-              <Typography variant="h6" sx={{ fontWeight: "bold", color: "#003366" }}>
+              <Typography variant="h6" sx={{ fontWeight: "bold", color: "#003366" }} className="card-title">
                 Important Dates
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", color: "green", mt: 1 }}>
+              <Typography variant="body2" sx={{ fontWeight: "bold", color: "green", mt: 1 }} className="card-title">
                 Commencement of Online Submission of Application Form for Secondary 
                 Compartmental/Special Application for Exam 2025 is from 28-04-2025 To 27-05-2025
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold", color: "green", mt: 1 }}>
+              <Typography variant="body2" sx={{ fontWeight: "bold", color: "green", mt: 1 }} className="card-title">
                 Last Date of Application fee payment is till 27-05-2025. [/25]
               </Typography>
             </CardContent>
@@ -40,7 +40,7 @@ const UserLogin = () => {
         <Grid size={{xl:6,md:6,sm:12}}>
           <Card sx={{ border: "1px solid #ddd", borderRadius: 2 }}>
             <CardContent>
-              <Typography sx={{ fontWeight: "bold", color: "#003366",fontSize:"16px" }}>
+              <Typography sx={{ fontWeight: "bold", color: "#003366",fontSize:"16px" }} className="card-title">
                 College/Institution Login
               </Typography>
 

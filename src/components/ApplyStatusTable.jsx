@@ -65,43 +65,43 @@ const ApplyStatusTableData = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>#</TableCell>
-              <TableCell><b>BSEB Unique ID<br />Reg. No<br />App No</b></TableCell>
-              <TableCell><b>Candidate's Name<br />Mother's Name<br />Father's Name</b></TableCell>
-              <TableCell><b>D-O-B / Caste / Gender</b></TableCell>
-              <TableCell><b>PH Applied ctg<br />Exam Type</b></TableCell>
-              <TableCell><b>-: Subject(s) :-</b></TableCell>
-              <TableCell><b>Applied Status</b></TableCell>
-              <TableCell><b>Action</b></TableCell>
+              <TableCell className="card-title">#</TableCell>
+              <TableCell className="card-title"><b>BSEB Unique ID<br />Reg. No<br />App No</b></TableCell>
+              <TableCell className="card-title"> <b>Candidate's Name<br />Mother's Name<br />Father's Name</b></TableCell>
+              <TableCell className="card-title"><b>D-O-B / Caste / Gender</b></TableCell>
+              <TableCell className="card-title"><b>PH Applied ctg<br />Exam Type</b></TableCell>
+              <TableCell className="card-title"><b>-: Subject(s) :-</b></TableCell>
+              <TableCell className="card-title"><b>Applied Status</b></TableCell>
+              <TableCell className="card-title"><b>Action</b></TableCell>
             </TableRow>
           </TableHead>
 
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.id}>
-                <TableCell>{row.id}</TableCell>
-                <TableCell>
+                <TableCell className="card-title">{row.id}</TableCell>
+                <TableCell className="card-title">
                   <b>{row.uniqueID}</b> <br />
                   {row.regNo} <br />
                   {row.appNo}
-                </TableCell>
-                <TableCell>
+                </TableCell >
+                <TableCell className="card-title">
                   {row.candidateName} <br />
                   {row.motherName} <br />
                   {row.fatherName}
                 </TableCell>
-                <TableCell>
+                <TableCell className="card-title">
                   {row.dob} / {row.caste} / {row.gender}
                 </TableCell>
-                <TableCell>
+                <TableCell className="card-title">
                   {row.phApplied} <br />
                   {row.examType}
                 </TableCell>
-                <TableCell>{row.subjects}</TableCell>
-                <TableCell sx={{ color: "green", fontWeight: "bold" }}>
+                <TableCell className="card-title">{row.subjects}</TableCell>
+                <TableCell className="card-title" sx={{ color: "green", fontWeight: "bold" }}>
                   {row.status}
                 </TableCell>
-                <TableCell style={{width:"150px"}}>
+                <TableCell style={{width:"150px"}} className="card-title">
                   {/* <Button variant="outlined" size="small">Select Action</Button> */}
                   <Select fullWidth   style={{height:"40px"}}>
       <MenuItem value="">-Select-</MenuItem>
