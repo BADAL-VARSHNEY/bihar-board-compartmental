@@ -6,22 +6,22 @@ const PaymentGateway = () => {
   return (
     <Box sx={{ textAlign: "center",}}>
       {/* School Name */}
-      <Typography variant="h6" color="error" fontWeight="bold">
+      <Typography variant="h6" color="error" fontWeight="bold" className="card-title">
         11001-ZILA SCHOOL PURNEA
       </Typography>
 
       {/* Fee Details */}
-      <Typography variant="body1" fontWeight="bold" sx={{textAlign:"start"}}>
+      <Typography variant="body1" fontWeight="bold" sx={{textAlign:"start"}} className="card-title"                      >
         Total Fees Collect from Applications:{" "}
-        <Typography component="span" fontWeight="bold">
+        <Typography component="span" fontWeight="bold" className="card-title">
           1785.00
         </Typography>
       </Typography>
-      <Typography variant="body1" sx={{textAlign:"start"}}>
+      <Typography variant="body1" sx={{textAlign:"start"}} className="card-title">
         Final Fees To be Paid/Balance:
       </Typography>
-      <Grid container style={{ justifyContent:"end" }}>
-  <Grid item size={{xl:6,md:6,}}>
+      <Grid container style={{ justifyContent:"end" }} >
+  <Grid item size={{xl:6,md:6,}} className="card-title">
     <Typography variant="body2" sx={{ mt: 2, textAlign: "start" }}>
       Select Payment Gateway
     </Typography>
@@ -36,7 +36,7 @@ const PaymentGateway = () => {
 
 
       {/* Note Section */}
-      <Typography variant="body2" color="primary" sx={{ mt: 2 ,textAlign:"center",fontSize:"24px"}}>
+      <Typography variant="body2" className="card-title" color="primary" sx={{ mt: 2 ,textAlign:"center",fontSize:"24px"}}>
         <strong>Note:</strong> Please carefully make a payment, once you initiate
         the amount...
       </Typography>
