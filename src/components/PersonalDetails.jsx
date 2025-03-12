@@ -276,7 +276,7 @@ function PersonalDetails() {
 
               <Box
                 sx={{
-                  borderTop: "1px solid #ccc",
+                  borderTop: "2px solid #ccc",
                   paddingTop: 2,
                   margin: "20px auto",
                 }}
@@ -371,81 +371,7 @@ function PersonalDetails() {
                     />
                   </Grid>
                 </Grid>
-
-                {/* Subject Section */}
-                {/* <Divider sx={{ my: 3 }} />
-                <Typography variant="h6" textAlign="center" gutterBottom>
-                  SUBJECT OFFERED:
-                </Typography>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      MIL:
-                    </Typography>
-                    <TextField size="small" fullWidth defaultValue="URD-URDU" />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      SIL:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="NLH-HINDI"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      COMPULSORY SUBJECTS:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="MAT-MATHEMATICS"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      SSC-SOCIAL SCIENCE:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="SSC-SOCIAL SCIENCE"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      SCIENCE:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="SCI-SCIENCE"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      ENGLISH:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="ENG-ENGLISH"
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={3}>
-                    <Typography variant="body2" fontWeight="bold">
-                      OPTIONAL SUBJECT:
-                    </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="NA-NOT APPLICABLE"
-                    />
-                  </Grid>
-                </Grid> */}
-                <Box sx={{ pt: 2 }}>
+                <Box sx={{ pt: 2, borderTop: "2px solid #ccc", mt: 2 }}>
                   <Typography fontSize="16px" fontWeight="bold" gutterBottom>
                     <b style={{ color: "red" }}>* </b>SUBJECT OFFERED:
                   </Typography>
@@ -477,7 +403,15 @@ function PersonalDetails() {
                     </Grid>
 
                     {/* COMPULSORY SUBJECTS */}
-                    <Grid item size={{ xs: 12, md: 5 }}>
+                    <Grid
+                      item
+                      size={{
+                        xs: 12,
+                        md: 5,
+                        borderTop: "2px solid #ccc",
+                        mt: 2,
+                      }}
+                    >
                       <Typography align="center" fontWeight="bold">
                         COMPULSORY SUBJECTS
                       </Typography>
@@ -533,7 +467,7 @@ function PersonalDetails() {
                 </Box>
 
                 {/* Address Details */}
-                <Divider sx={{ my: 3 }} />
+                <Divider sx={{ my: 3, borderTop: "2px solid #ccc", mt: 3 }} />
                 <Typography fontSize="16px" fontWeight="bold" gutterBottom>
                   <b style={{ color: "red" }}>* </b>ADDRESS DETAILS:
                 </Typography>
@@ -606,7 +540,7 @@ function PersonalDetails() {
                 </Grid>
               </Box>
 
-              <Box sx={{ pt: 2 }}>
+              <Box sx={{ pt: 2, borderTop: "2px solid #ccc", mt: 2 }}>
                 <Typography fontWeight="bold" gutterBottom>
                   <b style={{ color: "red" }}>* </b>PHOTO & SIGNATURE:
                 </Typography>
