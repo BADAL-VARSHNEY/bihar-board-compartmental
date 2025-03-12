@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const PaymentStatus = () => {
     const navigate = useNavigate()
     const handleApplication = () => {
-        navigate("/personal-details")
+        navigate("/candidate-details")
     }
   return (
     <Box p={3} border="1px solid #ddd" borderRadius={2} bgcolor="#f9f9f9">

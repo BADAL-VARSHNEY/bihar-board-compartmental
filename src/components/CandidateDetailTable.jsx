@@ -1,8 +1,14 @@
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField } from "@mui/material"
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 
 function CandidateTable () {
+    const navigate = useNavigate()
+    const handleOpen = () => {
+       
+        navigate("/personal-details")
+    }
     return(
         <>
          <Paper sx={{ width: "100%", overflow: "hidden", padding: 2 }}>
@@ -36,10 +42,10 @@ function CandidateTable () {
              
               <TableCell>
                <Button  variant="contained"
-                sx={{ mt: 2, backgroundColor: "#007bff", color: "white" }}>Apply</Button>
+                sx={{ mt: 2, backgroundColor: "#007bff", color: "white" }} onClick={handleOpen}>Apply</Button>
               </TableCell>
             </TableRow>
-            <TableRow>
+            {/* <TableRow>
               <TableCell>2</TableCell>
               <TableCell>123456</TableCell>
               <TableCell>78910</TableCell>
@@ -63,7 +69,7 @@ function CandidateTable () {
               <Button  variant="contained"
                 sx={{ mt: 2, backgroundColor: "#007bff", color: "white" }}>Apply</Button>
               </TableCell>
-            </TableRow>
+            </TableRow> */}
           </TableBody>
         </Table>
       </TableContainer>
