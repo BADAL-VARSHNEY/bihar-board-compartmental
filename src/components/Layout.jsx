@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { Outlet } from "react-router-dom";
+import "./Layout.css"
 
 function Layout() {
   return (
@@ -21,7 +22,18 @@ function Layout() {
           />
         </Box>
       </Box>
-      <div style={{ height: "54px", backgroundColor: "#8C0001" }}> BSEB</div>
+      <div style={{ height: "54px", backgroundColor: "#8C0001" }}> 
+        <div className="main-container">
+        <p className="main-containers">BSEB</p>
+<p>Secondary Annual/Compartmental/Special Exam</p>
+
+<ul>
+  <li>Home</li>
+  {/* <li>Contact</li> */}
+</ul>
+        </div>
+        
+        </div>
       <Container maxWidth="lg" style={{ marginTop: "24px" }}>
         <Outlet />
       </Container>

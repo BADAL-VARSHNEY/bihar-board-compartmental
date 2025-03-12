@@ -1,0 +1,19 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    color: white;
+}
+
+.main-container ul li {
+    text-decoration: none;
+    list-style: none;
+    
+}
+.container-card {
+    display: flex;
+    gap: 8px;
+    
+
+}
