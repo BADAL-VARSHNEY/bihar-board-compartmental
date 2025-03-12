@@ -6,16 +6,8 @@ import {
   TextField,
   Divider,
   Typography,
-  Paper,
   Checkbox,
   Button,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  TextareaAutosize,
   Input,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
@@ -80,144 +72,226 @@ function PersonalDetails() {
             <CardContent>
               <Grid container spacing={2}>
                 {/* Box 1 */}
-                <Grid item size={{ xs: 5, md: 3 }}>
-                  <Box>
-                    <Typography>
-                      <b>School Code/Name:</b>
-                    </Typography>
-                    <Typography>
-                      <b>BSEB Unique ID:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Student's Name:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Father's Name:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Gender:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Mobile No.:</b>
-                    </Typography>
-                    <Typography sx={{ fontWeight: "bold", mt: 1 }}>
-                      <b style={{ color: "red" }}>*</b>Differently abled:
-                    </Typography>
-                  </Box>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>School Code/Name:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography
+                        style={{ color: "green", fontWeight: "bold" }}
+                      >
+                        11001 - ZILA SCHOOL PURNEA
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Registration No:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>11001-00236-24</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>BSEB Unique ID:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>1241270010236</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Mother's Name:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>GULZERA KHATUN</Typography>
+                    </Grid>
+                  </Grid>
                 </Grid>
 
-                <Grid item size={{ xs: 7, md: 3 }}>
-                  <Box>
-                    <Typography style={{ color: "green", fontWeight: "bold" }}>
-                      11001 - ZILA SCHOOL PURNEA
-                    </Typography>
-                    <Typography>1241270010236</Typography>
-                    <Typography style={{ fontWeight: "bold" }}>
-                      MD MUSARAF ALAM
-                    </Typography>
-                    <Typography>MUSTAFA ALAM</Typography>
-                    <Typography>Male</Typography>
-                    <TextField fullWidth size="small" value="7250203137" />
-                    <TextField fullWidth size="small" value="No" />
-                  </Box>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Student's Name:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography style={{ fontWeight: "bold" }}>
+                        MD MUSARAF ALAM
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Date of Birth:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>01/01/2010</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Father's Name:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>MUSTAFA ALAM</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Caste Category:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>BC</Typography>
+                    </Grid>
+                  </Grid>
                 </Grid>
 
-                {/* Box 2 */}
-                <Grid item size={{ xs: 5, md: 3 }}>
-                  <Box>
-                    <Typography>
-                      <b>Registration No:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Mother's Name:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Date of Birth:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Caste Category:</b>
-                    </Typography>
-                    <Typography>
-                      <b>Email Address:</b>
-                    </Typography>
-                  </Box>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>
+                        <b>Gender:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6 }}>
+                      <Typography>Male</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <Typography>
+                        <b>Mobile No.:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <TextField fullWidth size="small" value="7250203137" />
+                    </Grid>
+                  </Grid>
                 </Grid>
 
-                <Grid item size={{ xs: 7, md: 3 }}>
-                  <Box>
-                    <Typography>11001-00236-24</Typography>
-                    <Typography>GULZERA KHATUN</Typography>
-                    <Typography>01/01/2010</Typography>
-                    <Typography>BC</Typography>
-                    <TextField
-                      fullWidth
-                      size="small"
-                      value="musaraf3137@gmail.com"
-                    />
-                  </Box>
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <Typography sx={{ fontWeight: "bold", mt: 1 }}>
+                        <b style={{ color: "red" }}>*</b>Differently abled:
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <TextField fullWidth size="small" value="No" />
+                    </Grid>
+                  </Grid>
+                </Grid>
+
+                <Grid item size={{ xs: 12, md: 6 }}>
+                  <Grid container spacing={1}>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <Typography>
+                        <b>Email Address:</b>
+                      </Typography>
+                    </Grid>
+                    <Grid item size={{ sm: 6, xs: 12 }}>
+                      <TextField
+                        fullWidth
+                        size="small"
+                        value="musaraf3137@gmail.com"
+                      />
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
               <Box
                 sx={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: 2,
                   borderTop: "2px solid #ccc",
                   borderBottom: "2px solid #ccc",
                   paddingTop: 2,
+                  paddingBottom: 2,
                 }}
               >
-                {/* Left Side Text */}
-                <Box
-                  sx={{
-                    flex: 2,
-                    borderRight: "2px solid #ccc",
-                    paddingRight: 1,
-                  }}
-                >
-                  <Typography
-                    variant="subtitle2"
-                    sx={{
-                      color: "red",
-                      fontWeight: "bold",
-                      textDecoration: "underline",
-                    }}
+                <Grid container spacing={2} alignItems="flex-start">
+                  {/* Left Side Text */}
+                  <Grid
+                    item
+                    size={{ xs: 12, md: 8 }}
+                    sx={{ borderRight: "2px solid #ccc", paddingRight: 2 }}
                   >
-                    # PLEASE MENTION "AADHAR NUMBER" / कृपया "आधार नंबर" अंकित
-                    करें:
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ fontSize: "0.9rem", mt: 1 }}
-                  >
-                    (If candidate has not enrolled in Aadhar and doesn't have
-                    "Aadhar number", then he/she is required to submit
-                    declaration in below column that he/she has not been
-                    enrolled in Aadhar and has not got "Aadhar number".) / (यदि
-                    आवेदक को "आधार नंबर" आवंटित नहीं हुआ है, तो आवेदक को यह
-                    घोषणा नीचे के कॉलम में करनी होगी कि "आधार नंबर" आवंटित नहीं
-                    हुआ है।)
-                  </Typography>
-                </Box>
+                    <Typography
+                      variant="subtitle2"
+                      sx={{
+                        color: "red",
+                        fontWeight: "bold",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      # PLEASE MENTION "AADHAR NUMBER" / कृपया "आधार नंबर" अंकित
+                      करें:
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{ fontSize: "0.9rem", marginTop: 1 }}
+                    >
+                      (If candidate has not enrolled in Aadhar and doesn't have
+                      "Aadhar number", then he/she is required to submit
+                      declaration in below column that he/she has not been
+                      enrolled in Aadhar and has not got "Aadhar number".) /
+                      (यदि आवेदक को "आधार नंबर" आवंटित नहीं हुआ है, तो आवेदक को
+                      यह घोषणा नीचे के कॉलम में करनी होगी कि "आधार नंबर" आवंटित
+                      नहीं हुआ है।)
+                    </Typography>
+                  </Grid>
 
-                {/* Right Side Input Field */}
-                <Box sx={{ flex: 1 }}>
-                  <TextField
-                    label="Aadhar Number"
-                    placeholder="e.g., 9999-9999-9999"
-                    variant="outlined"
-                    fullWidth
-                    sx={{
-                      mb: 1,
-                    }}
-                  />
-                  <Typography
-                    variant="caption"
-                    sx={{ display: "block", color: "gray", textAlign: "right" }}
-                  >
-                    e.g., 9999-9999-9999
-                  </Typography>
-                </Box>
+                  {/* Right Side Input Field */}
+                  <Grid item size={{ xs: 12, md: 4 }}>
+                    <TextField
+                      label="Aadhar Number"
+                      placeholder="e.g., 9999-9999-9999"
+                      variant="outlined"
+                      fullWidth
+                      sx={{ marginBottom: 1 }}
+                    />
+                    <Typography
+                      variant="caption"
+                      sx={{
+                        display: "block",
+                        color: "gray",
+                        textAlign: "right",
+                      }}
+                    >
+                      e.g., 9999-9999-9999
+                    </Typography>
+                  </Grid>
+                </Grid>
               </Box>
               <Box
                 sx={{
@@ -282,105 +356,124 @@ function PersonalDetails() {
                 }}
               >
                 {/* First Row */}
-                <Grid container spacing={2} alignItems="center">
+                <Grid container spacing={2}>
                   {/* Column 1: Labels */}
-                  <Grid item size={{ xs: 5, md: 3 }}>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mb: 3 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Area:
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mb: 3 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Nationality:
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mt: 4 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Religion:
-                    </Typography>
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography variant="body2" fontWeight="bold">
+                          <b style={{ color: "red" }}>* </b>Area:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="Rural"
+                        />
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography variant="body2" fontWeight="bold">
+                          <b style={{ color: "red" }}>* </b>Nationality:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="Indian"
+                        />
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography variant="body2" fontWeight="bold">
+                          <b style={{ color: "red" }}>* </b>Religion:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="Islam"
+                        />
+                      </Grid>
+                    </Grid>
                   </Grid>
 
-                  {/* Column 2: Values */}
-                  <Grid item size={{ xs: 7, md: 3 }}>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="Rural"
-                      sx={{ mb: 1 }}
-                    />
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="Indian"
-                      sx={{ mb: 1 }}
-                    />
-                    <TextField size="small" fullWidth defaultValue="Islam" />
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography variant="body2" fontWeight="bold">
+                          <b style={{ color: "red" }}>* </b>Marital Status:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="Unmarried"
+                        />
+                      </Grid>
+                    </Grid>
                   </Grid>
 
-                  {/* Column 3: Labels */}
-                  <Grid item size={{ xs: 5, md: 3 }}>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mb: 3 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Marital Status:
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mb: 3 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Medium of Exam:
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{ mt: 4 }}
-                    >
-                      <b style={{ color: "red" }}>* </b>Student Category:
-                    </Typography>
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography
+                          variant="body2"
+                          fontWeight="bold"
+                          sx={{ mb: 3 }}
+                        >
+                          <b style={{ color: "red" }}>* </b>Medium of Exam:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="Hindi"
+                        />
+                      </Grid>
+                    </Grid>
                   </Grid>
 
-                  {/* Column 4: Values */}
-                  <Grid item size={{ xs: 7, md: 3 }}>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="Unmarried"
-                      sx={{ mb: 1 }}
-                    />
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="Hindi"
-                      sx={{ mb: 1 }}
-                    />
-                    <TextField
-                      size="small"
-                      fullWidth
-                      defaultValue="[R/P/B/C/E/S]"
-                    />
+                  <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid container spacing={1}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <Typography variant="body2" fontWeight="bold">
+                          <b style={{ color: "red" }}>* </b>Student Category:
+                        </Typography>
+                      </Grid>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          defaultValue="[R/P/B/C/E/S]"
+                        />
+                      </Grid>
+                    </Grid>
                   </Grid>
                 </Grid>
                 <Box sx={{ pt: 2, borderTop: "2px solid #ccc", mt: 2 }}>
                   <Typography fontSize="16px" fontWeight="bold" gutterBottom>
                     <b style={{ color: "red" }}>* </b>SUBJECT OFFERED:
                   </Typography>
+                  <br />
                   <Grid container spacing={2}>
                     {/* MIL */}
                     <Grid item size={{ xs: 12, md: 2 }}>
                       <Typography align="center" fontWeight="bold">
                         MIL
                       </Typography>
+                      <br />
                       <TextField
                         variant="outlined"
                         size="small"
@@ -394,6 +487,7 @@ function PersonalDetails() {
                       <Typography align="center" fontWeight="bold">
                         SIL
                       </Typography>
+                      <br />
                       <TextField
                         variant="outlined"
                         size="small"
@@ -415,6 +509,7 @@ function PersonalDetails() {
                       <Typography align="center" fontWeight="bold">
                         COMPULSORY SUBJECTS
                       </Typography>
+                      <br />
                       <Grid
                         container
                         spacing={2}
@@ -455,7 +550,7 @@ function PersonalDetails() {
                       <Typography align="center" fontWeight="bold">
                         OPTIONAL SUBJECT
                       </Typography>
-
+                      <br />
                       <TextField
                         variant="outlined"
                         size="small"
@@ -468,20 +563,25 @@ function PersonalDetails() {
 
                 {/* Address Details */}
                 <Divider sx={{ my: 3, borderTop: "2px solid #ccc", mt: 3 }} />
-                <Typography fontSize="16px" fontWeight="bold" gutterBottom>
+                <Typography
+                  fontSize="16px"
+                  marginBottom="16px"
+                  fontWeight="bold"
+                  gutterBottom
+                >
                   <b style={{ color: "red" }}>* </b>ADDRESS DETAILS:
                 </Typography>
 
                 <Grid container spacing={2}>
                   <Grid item size={{ xs: 12, md: 6 }}>
                     <Grid container spacing={1}>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <Typography variant="body2" fontWeight="bold">
                           <b style={{ color: "red" }}>* </b>Address:
                         </Typography>
                       </Grid>
-                      <Grid item size={6}>
-                        <TextareaAutosize
+                      <Grid item size={{ sm: 6, xs: 12 }}>
+                        <TextField
                           size="small"
                           fullWidth
                           defaultValue="GHORA CHOWK PARARIA"
@@ -491,12 +591,12 @@ function PersonalDetails() {
                   </Grid>
                   <Grid item size={{ xs: 12, md: 6 }}>
                     <Grid container spacing={1}>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <Typography variant="body2" fontWeight="bold">
                           <b style={{ color: "red" }}>* </b>District Name:
                         </Typography>
                       </Grid>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <TextField
                           size="small"
                           fullWidth
@@ -507,12 +607,12 @@ function PersonalDetails() {
                   </Grid>
                   <Grid item size={{ xs: 12, md: 6 }}>
                     <Grid container spacing={1}>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <Typography variant="body2" fontWeight="bold">
                           <b style={{ color: "red" }}>* </b>Town / City Name:
                         </Typography>
                       </Grid>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <TextField
                           size="small"
                           fullWidth
@@ -523,12 +623,12 @@ function PersonalDetails() {
                   </Grid>
                   <Grid item size={{ xs: 12, md: 6 }}>
                     <Grid container spacing={1}>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <Typography variant="body2" fontWeight="bold">
                           <b style={{ color: "red" }}>* </b>Pincode:
                         </Typography>
                       </Grid>
-                      <Grid item size={6}>
+                      <Grid item size={{ sm: 6, xs: 12 }}>
                         <TextField
                           size="small"
                           fullWidth
@@ -673,6 +773,8 @@ function PersonalDetails() {
                 sx={{
                   pt: 2,
                   textAlign: "center",
+                  borderTop: "2px solid #ccc",
+                  mt: 2,
                 }}
               >
                 <Grid container alignItems="center" spacing={1}>
@@ -686,7 +788,7 @@ function PersonalDetails() {
                   </Grid>
 
                   {/* Confirmation Text */}
-                  <Grid item xs>
+                  <Grid item>
                     <Typography
                       variant="body2"
                       sx={{
