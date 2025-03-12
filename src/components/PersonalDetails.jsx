@@ -39,6 +39,20 @@ function PersonalDetails() {
       setSignature(URL.createObjectURL(file));
     }
   };
+
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setChecked(event.target.checked);
+  };
+
+  const handleApplyClick = () => {
+    if (checked) {
+      alert("Form submitted successfully!");
+    } else {
+      alert("Please check the confirmation box before applying.");
+    }
+  };
   return (
     <Box sx={{ flexGrow: 1, p: 2 }}>
       <Grid container spacing={2}>
@@ -274,21 +288,21 @@ function PersonalDetails() {
                       fontWeight="bold"
                       sx={{ mb: 3 }}
                     >
-                      *Area:
+                      <b style={{ color: "red" }}>* </b>Area:
                     </Typography>
                     <Typography
                       variant="body2"
                       fontWeight="bold"
                       sx={{ mb: 3 }}
                     >
-                      *Nationality:
+                      <b style={{ color: "red" }}>* </b>Nationality:
                     </Typography>
                     <Typography
                       variant="body2"
                       fontWeight="bold"
                       sx={{ mt: 4 }}
                     >
-                      *Religion:
+                      <b style={{ color: "red" }}>* </b>Religion:
                     </Typography>
                   </Grid>
 
@@ -316,21 +330,21 @@ function PersonalDetails() {
                       fontWeight="bold"
                       sx={{ mb: 3 }}
                     >
-                      *Marital Status:
+                      <b style={{ color: "red" }}>* </b>Marital Status:
                     </Typography>
                     <Typography
                       variant="body2"
                       fontWeight="bold"
                       sx={{ mb: 3 }}
                     >
-                      *Medium of Exam:
+                      <b style={{ color: "red" }}>* </b>Medium of Exam:
                     </Typography>
                     <Typography
                       variant="body2"
                       fontWeight="bold"
                       sx={{ mt: 4 }}
                     >
-                      *Student Category:
+                      <b style={{ color: "red" }}>* </b>Student Category:
                     </Typography>
                   </Grid>
 
@@ -527,7 +541,7 @@ function PersonalDetails() {
                     <Grid container spacing={1}>
                       <Grid item size={6}>
                         <Typography variant="body2" fontWeight="bold">
-                          *Address:
+                          <b style={{ color: "red" }}>* </b>Address:
                         </Typography>
                       </Grid>
                       <Grid item size={6}>
@@ -543,7 +557,7 @@ function PersonalDetails() {
                     <Grid container spacing={1}>
                       <Grid item size={6}>
                         <Typography variant="body2" fontWeight="bold">
-                          *District Name:
+                          <b style={{ color: "red" }}>* </b>District Name:
                         </Typography>
                       </Grid>
                       <Grid item size={6}>
@@ -559,7 +573,7 @@ function PersonalDetails() {
                     <Grid container spacing={1}>
                       <Grid item size={6}>
                         <Typography variant="body2" fontWeight="bold">
-                          *Town / City Name:
+                          <b style={{ color: "red" }}>* </b>Town / City Name:
                         </Typography>
                       </Grid>
                       <Grid item size={6}>
@@ -575,7 +589,7 @@ function PersonalDetails() {
                     <Grid container spacing={1}>
                       <Grid item size={6}>
                         <Typography variant="body2" fontWeight="bold">
-                          *Pincode:
+                          <b style={{ color: "red" }}>* </b>Pincode:
                         </Typography>
                       </Grid>
                       <Grid item size={6}>
@@ -693,12 +707,14 @@ function PersonalDetails() {
                   <Typography
                     variant="body2"
                     sx={{
-                      color: "red",
                       fontSize: "12px",
                       fontWeight: "bold",
                     }}
                   >
-                    Note:
+                    Note:{" "}
+                    <b style={{ color: "red" }}>
+                      Do not use any special character of image file name.
+                    </b>
                   </Typography>
                   <Typography variant="body2" sx={{ fontSize: "12px" }}>
                     1. Upload recent colour photograph only in JPG format, size
@@ -709,9 +725,66 @@ function PersonalDetails() {
                     should be between 10 kb to 20 kb.
                   </Typography>
                   <Typography variant="body2" sx={{ fontSize: "12px" }}>
-                    3. Please upload photograph in proper size and shape (Head
-                    size/Face size: 20mm X 25 mm approx 60% to 70%).
+                    3.{" "}
+                    <b style={{ color: "red" }}>
+                      Please upload photograph in proper size and shape (Head
+                      size/Face size: 20mm X 25 mm approx 60% to 70%).
+                    </b>
                   </Typography>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  p: 2,
+                  mt: 3,
+                  border: "1px solid #ccc",
+                  borderRadius: "8px",
+                  textAlign: "center",
+                }}
+              >
+                <Grid container alignItems="center" spacing={1}>
+                  {/* Checkbox Section */}
+                  <Grid item>
+                    <Checkbox
+                      checked={checked}
+                      onChange={handleCheckboxChange}
+                      color="primary"
+                    />
+                  </Grid>
+
+                  {/* Confirmation Text */}
+                  <Grid item xs>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        color: "red",
+                        fontSize: "14px",
+                        textAlign: "justify",
+                      }}
+                    >
+                      I confirm that the information given in this form is true,
+                      complete, and accurate to the best of my knowledge and
+                      belief. In case any of the above information is found to
+                      be false, untrue, or misleading, it may lead to the
+                      cancellation of my candidature, and B.S.E.B. can take
+                      legal action against me.
+                    </Typography>
+                  </Grid>
+                </Grid>
+
+                {/* Apply Button */}
+                <Box sx={{ mt: 2 }}>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={handleApplyClick}
+                    disabled={!checked} // Button is disabled until checkbox is checked
+                    sx={{
+                      px: 4,
+                    }}
+                  >
+                    Apply
+                  </Button>
                 </Box>
               </Box>
             </CardContent>
