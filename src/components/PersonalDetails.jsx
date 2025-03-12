@@ -19,8 +19,10 @@ import {
   Input,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { useNavigate } from "react-router-dom";
 
 function PersonalDetails() {
+  const navigate = useNavigate();
   const [photo, setPhoto] = useState(null);
   const [signature, setSignature] = useState(null);
 
@@ -48,7 +50,7 @@ function PersonalDetails() {
 
   const handleApplyClick = () => {
     if (checked) {
-      alert("Form submitted successfully!");
+      navigate("/status-table");
     } else {
       alert("Please check the confirmation box before applying.");
     }
@@ -735,10 +737,7 @@ function PersonalDetails() {
               </Box>
               <Box
                 sx={{
-                  p: 2,
-                  mt: 3,
-                  border: "1px solid #ccc",
-                  borderRadius: "8px",
+                  pt: 2,
                   textAlign: "center",
                 }}
               >
