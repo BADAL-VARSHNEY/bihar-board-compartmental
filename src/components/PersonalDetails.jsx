@@ -253,6 +253,7 @@ function PersonalDetails() {
                         fontWeight: "bold",
                         textDecoration: "underline",
                       }}
+                      className="card-title"
                     >
                       # PLEASE MENTION "AADHAR NUMBER" / कृपया "आधार नंबर" अंकित
                       करें:
@@ -260,6 +261,7 @@ function PersonalDetails() {
                     <Typography
                       variant="body2"
                       sx={{ fontSize: "0.9rem", marginTop: 1 }}
+                      className="card-title"
                     >
                       (If candidate has not enrolled in Aadhar and doesn't have
                       "Aadhar number", then he/she is required to submit
@@ -302,6 +304,7 @@ function PersonalDetails() {
                 <Typography
                   variant="body2"
                   sx={{ color: "red", fontSize: "0.9rem", mb: 1 }}
+                  className="card-title"
                 >
                   If candidate has not given "Aadhar number" in above column,
                   then following declaration should be given by candidate / यदि
@@ -311,6 +314,7 @@ function PersonalDetails() {
                 <Typography
                   variant="body2"
                   sx={{ color: "red", fontSize: "0.9rem", mb: 2 }}
+                  className="card-title"
                 >
                   (Please note that any WRONG DECLARATION made here, may invite
                   action against the candidate and his/her candidature may be
@@ -332,6 +336,7 @@ function PersonalDetails() {
                       fontWeight: 600,
                       textDecoration: "underline",
                     }}
+                    className="card-title"
                   >
                     <strong sx={{ fontSize: "1rem", lineHeight: 1.5 }}>
                       DECLARATION / घोषणा:
@@ -746,21 +751,22 @@ function PersonalDetails() {
                       fontSize: "12px",
                       fontWeight: "bold",
                     }}
+                    className="card-title"
                   >
                     Note:{" "}
                     <b style={{ color: "red" }}>
                       Do not use any special character of image file name.
                     </b>
                   </Typography>
-                  <Typography variant="body2" sx={{ fontSize: "12px" }}>
+                  <Typography variant="body2" sx={{ fontSize: "12px" }} className="card-title"> 
                     1. Upload recent colour photograph only in JPG format, size
                     of Photograph should be between 20 kb to 50 kb.
                   </Typography>
-                  <Typography variant="body2" sx={{ fontSize: "12px" }}>
+                  <Typography variant="body2" sx={{ fontSize: "12px" }} className="card-title">
                     2. Upload signature only in JPG format, size of Signature
                     should be between 10 kb to 20 kb.
                   </Typography>
-                  <Typography variant="body2" sx={{ fontSize: "12px" }}>
+                  <Typography variant="body2" sx={{ fontSize: "12px" }} className="card-title">
                     3.{" "}
                     <b style={{ color: "red" }}>
                       Please upload photograph in proper size and shape (Head
@@ -796,6 +802,7 @@ function PersonalDetails() {
                         fontSize: "14px",
                         textAlign: "justify",
                       }}
+                      className="card-title"
                     >
                       I confirm that the information given in this form is true,
                       complete, and accurate to the best of my knowledge and

@@ -12,7 +12,7 @@ const UserLogin = () => {
       
       {/* Title */}
       <Grid item xs={12} textAlign="center">
-        <Typography variant="h5" sx={{ color: "green", fontWeight: "bold" }} className="card-title">
+        <Typography  sx={{ color: "green", fontWeight: "bold",fontSize:"20px" }} className="card-title">
           Online Application For Secondary Compartmental/Special Application for Exam 2025
         </Typography>
       </Grid>

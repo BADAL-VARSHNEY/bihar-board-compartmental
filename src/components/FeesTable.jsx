@@ -135,7 +135,7 @@ const FeesTable = () => {
 
       {/* Form Fields */}
       <Grid container spacing={2} sx={{ mt: 3, alignItems: "center" }}>
-        <Grid item size={{ xs: 12, md: 5, xl: 5 }}>
+        <Grid item size={{ xs: 12, md: 5, xl: 5, sm:4 }}>
           <Typography variant="body1" className="card-title">Select Exam Typ:</Typography>
           <Select fullWidth defaultValue="Special" className="card-title">
             <MenuItem value="Regular">Regular</MenuItem>
@@ -144,14 +144,14 @@ const FeesTable = () => {
           </Select>
         </Grid>
 
-        <Grid item size={{ xs: 12, md: 5, xl: 5 }}>
+        <Grid item size={{ xs: 12, md: 5, xl: 5,sm:4 }}>
           <Typography variant="body1" className="card-title">Select Student Category</Typography>
           <TextField fullWidth defaultValue="Reg/Pvt/Ex-Reg/Ex-Pvt" />
         </Grid>
 
         <Grid
           item
-          size={{ xs: 12, md: 2, xl: 2 }}
+          size={{ xs: 12, md: 2, xl: 2,sm:3 }}
           sx={{ mt: 3, alignItems: "center" }}
         >
           <Button

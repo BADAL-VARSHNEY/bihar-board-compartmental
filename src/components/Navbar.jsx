@@ -74,7 +74,11 @@ function Navbar() {
   </>
 )}
 
-          <Typography sx={{ color: "#fff",  fontWeight: "bold",cursor: "pointer", fontSize: { xs: "12px", md: "16px" } }}>
+        {location?.pathname !== "/" && (  <>
+            <Typography sx={{ color: "#fff",  fontWeight: "bold",cursor: "pointer", fontSize: { xs: "12px", md: "16px" } }}>
+            Back
+          </Typography>
+            <Typography sx={{ color: "#fff",  fontWeight: "bold",cursor: "pointer", fontSize: { xs: "12px", md: "16px" } }}>
             Fees
           </Typography>
           <Typography sx={{ color: "#fff", fontWeight: "bold", cursor: "pointer", fontSize: { xs: "12px", md: "16px" } }}>
@@ -83,6 +87,8 @@ function Navbar() {
           <Typography sx={{ color: "#fff", fontWeight: "bold", cursor: "pointer", fontSize: { xs: "12px", md: "16px" } }}>
             Lagout
           </Typography>
+          </>
+        )}
         </Box>
       </Container>
       <Container

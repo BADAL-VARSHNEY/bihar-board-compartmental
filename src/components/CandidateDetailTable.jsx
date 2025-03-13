@@ -16,7 +16,7 @@ function CandidateTable () {
          <Typography variant="h6" color="error" fontWeight="400" className="card-title">
         11001-ZILA SCHOOL PURNEA [Compartmental/Special Exam]
       </Typography>
-      <Grid container spacing={2} sx={{ mt: 3, alignItems: "start" }}  className="card-title">
+      <Grid container spacing={2} sx={{ mt: 3, alignItems: "start" }} style={{marginBottom:"12px"}}  className="card-title">
       <Grid item size={{ xs: 12, md: 5, xl: 5 }}>
           <Typography variant="body1" sx={{textAlign:"start"}} className="card-title">Select Student Category</Typography>
           <TextField fullWidth defaultValue="Reg/Pvt/Ex-Reg/Ex-Pvt"/>
@@ -25,13 +25,14 @@ function CandidateTable () {
          <Paper sx={{ width: "100%", overflow: "hidden", padding: 2 }}>
         
       {/* Search Field */}
-      <TextField
+
+  <TextField
         label="Search"
         variant="outlined"
         size="small"
         sx={{ float: "right", mb: 1 }}
       />
-          <TableContainer component={Paper} sx={{ mt: 2 }}>
+          <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
@@ -85,6 +86,7 @@ function CandidateTable () {
           </TableBody>
         </Table>
       </TableContainer>
+    
       </Paper>
       </Box>
         </>
